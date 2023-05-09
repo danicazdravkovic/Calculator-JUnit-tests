@@ -53,6 +53,6 @@ public class CalculatorTest {
         Exception e=assertThrows(Exception.class, ()->{
             calculator.divide(3, 0);
         });
-        assertEquals("Can't divide by zero!", e.getMessage());
+        assertEquals("Can't divide by zero", e.getMessage());
     }
 }

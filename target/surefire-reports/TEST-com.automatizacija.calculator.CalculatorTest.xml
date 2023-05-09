@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="1" name="com.automatizacija.calculator.CalculatorTest" time="0.06" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="com.automatizacija.calculator.CalculatorTest" time="0.056" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="17.0.6+9-LTS-190"/>
@@ -60,18 +60,9 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.automatizacija.calculator.CalculatorTest" name="com.automatizacija.calculator.CalculatorTest.testDivide" time="0.028"/>
+  <testcase classname="com.automatizacija.calculator.CalculatorTest" name="com.automatizacija.calculator.CalculatorTest.testAdd" time="0.044"/>
   <testcase classname="com.automatizacija.calculator.CalculatorTest" name="com.automatizacija.calculator.CalculatorTest.testSubtract" time="0"/>
-  <testcase classname="com.automatizacija.calculator.CalculatorTest" name="com.automatizacija.calculator.CalculatorTest.testAdd" time="0"/>
   <testcase classname="com.automatizacija.calculator.CalculatorTest" name="com.automatizacija.calculator.CalculatorTest.testMultiply" time="0"/>
-  <testcase classname="com.automatizacija.calculator.CalculatorTest" name="com.automatizacija.calculator.CalculatorTest.testDivideByZero" time="0.032">
-    <failure message="expected: &lt;Can&apos;t divide by zero!&gt; but was: &lt;Can&apos;t divide by zero&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;Can&apos;t divide by zero!&gt; but was: &lt;Can&apos;t divide by zero&gt;
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
-	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
-	at com.automatizacija.calculator.CalculatorTest.testDivideByZero(CalculatorTest.java:56)
-</failure>
-  </testcase>
+  <testcase classname="com.automatizacija.calculator.CalculatorTest" name="com.automatizacija.calculator.CalculatorTest.testDivide" time="0.001"/>
+  <testcase classname="com.automatizacija.calculator.CalculatorTest" name="com.automatizacija.calculator.CalculatorTest.testDivideByZero" time="0.011"/>
 </testsuite>
