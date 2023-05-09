@@ -35,17 +35,18 @@ public class CalculatorTest {
         assertEquals(2, result);
     }
 
-    @Test
-    public void testMultiply() {
-        int result = calculator.multiply(2, 3);
-        assertEquals(6, result);
+    @ParameterizedTest(name = "Multiplying {0} and {1} result is {2}")
+    @CsvSource({"4,2,8", "-4,2,-8", "4,-2,-8", "-4,-2,8"})
+    public void testMultiply(int num1, int num2, int res) {
+        int result = calculator.multiply(num1, num2);
+        assertEquals(res, result);
     }
 
     @ParameterizedTest(name = "Dividing {0} and {1} result is {2}")
     @CsvSource({"4,2,2", "-4,2,-2", "4,-2,-2", "-4,-2,2"})
-    public void testDivide() throws Exception {
-        int result = calculator.divide(6, 3);
-        assertEquals(2, result);
+    public void testDivide(int num1, int num2, int res) throws Exception {
+        int result = calculator.divide(num1, num2);
+        assertEquals(res, result);
     }
 
     @Test
